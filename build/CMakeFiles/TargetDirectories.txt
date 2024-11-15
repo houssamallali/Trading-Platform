@@ -1,0 +1,3 @@
+/Users/allalihoussam/Downloads/TradingPlatform/build/CMakeFiles/TradingPlatform.dir
+/Users/allalihoussam/Downloads/TradingPlatform/build/CMakeFiles/edit_cache.dir
+/Users/allalihoussam/Downloads/TradingPlatform/build/CMakeFiles/rebuild_cache.dir

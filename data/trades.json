@@ -1,0 +1,22 @@
+{
+    "trades": [
+        {
+            "symbol": "BTC/USD",
+            "quantity": 0.5,
+            "action": "buy",
+            "timestamp": "2024-11-15T10:00:00Z"
+        },
+        {
+            "symbol": "ETH/USD",
+            "quantity": 1.2,
+            "action": "sell",
+            "timestamp": "2024-11-15T11:00:00Z"
+        },
+        {
+            "symbol": "XRP/USD",
+            "quantity": 500,
+            "action": "buy",
+            "timestamp": "2024-11-15T12:00:00Z"
+        }
+    ]
+}
