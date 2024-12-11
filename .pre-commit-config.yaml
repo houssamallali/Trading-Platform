@@ -1,0 +1,10 @@
+repos:
+  - repo: local
+    hooks:
+      - id: cppcheck
+        name: Cppcheck
+        entry: cppcheck --enable=all --std=c++17 --project=build/compile_commands.json --suppressions-list=.cppcheck-suppress
+        language: system
+        types: [file]
+        pass_filenames: false
+
