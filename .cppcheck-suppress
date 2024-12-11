@@ -1,0 +1,6 @@
+# Suppress missing include system warnings
+missingIncludeSystem
+
+# Suppress specific warnings in your code
+noConstructor:src/trade.h
+missingReturn:src/json.hpp
