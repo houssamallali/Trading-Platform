@@ -1,0 +1,135 @@
+\doxysection{Trade Class Reference}
+\hypertarget{class_trade}{}\label{class_trade}\index{Trade@{Trade}}
+
+
+The \doxylink{class_trade}{Trade} class represents a trading action.  
+
+
+
+
+{\ttfamily \#include $<$trade.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_trade_a4c4cbef105b419f6370769f32845e8d3}{set\+Symbol}} (const std\+::string \&symbol)
+\begin{DoxyCompactList}\small\item\em Sets the trading symbol for the trade. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trade_a43eea85df78f49cea758112afbcf317a}{set\+Quantity}} (double quantity)
+\begin{DoxyCompactList}\small\item\em Sets the quantity for the trade. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trade_ac322e99c29043e3b6b58bd3bb9774f8a}{execute\+Buy}} ()
+\begin{DoxyCompactList}\small\item\em Executes a buy trade. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trade_aefe0e6909070d76a7b4fe56ea9e0b03f}{view\+Trades}} ()
+\begin{DoxyCompactList}\small\item\em Displays the trade history. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_trade_ab315df073c263d0638cbc32d9bbb0c9b}{get\+Symbol}} () const
+\begin{DoxyCompactList}\small\item\em Gets the trading symbol. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_trade_a48fa2ae0439bae99bca72229e2bf23e5}{get\+Quantity}} () const
+\begin{DoxyCompactList}\small\item\em Gets the quantity for the trade. \end{DoxyCompactList}\item 
+std\+::vector$<$ nlohmann\+::json $>$ \mbox{\hyperlink{class_trade_a38c2a69ac216cc7c8d90d3adc221d22c}{get\+Trade\+History}} () const
+\begin{DoxyCompactList}\small\item\em Gets the trade history. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_trade}{Trade} class represents a trading action. 
+
+This class provides functionality to set up, execute trades, and view trade history. It also provides getter methods for testing. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_trade_ac322e99c29043e3b6b58bd3bb9774f8a}\index{Trade@{Trade}!executeBuy@{executeBuy}}
+\index{executeBuy@{executeBuy}!Trade@{Trade}}
+\doxysubsubsection{\texorpdfstring{executeBuy()}{executeBuy()}}
+{\footnotesize\ttfamily \label{class_trade_ac322e99c29043e3b6b58bd3bb9774f8a} 
+void Trade\+::execute\+Buy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Executes a buy trade. 
+
+This method logs the trade in a JSON file and updates the trade history.
+
+This method reads the current trade history from a JSON file, adds the new trade to the history, and writes it back to the file. \Hypertarget{class_trade_a48fa2ae0439bae99bca72229e2bf23e5}\index{Trade@{Trade}!getQuantity@{getQuantity}}
+\index{getQuantity@{getQuantity}!Trade@{Trade}}
+\doxysubsubsection{\texorpdfstring{getQuantity()}{getQuantity()}}
+{\footnotesize\ttfamily \label{class_trade_a48fa2ae0439bae99bca72229e2bf23e5} 
+double Trade\+::get\+Quantity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the quantity for the trade. 
+
+\begin{DoxyReturn}{Returns}
+The quantity of the asset being traded. 
+\end{DoxyReturn}
+\Hypertarget{class_trade_ab315df073c263d0638cbc32d9bbb0c9b}\index{Trade@{Trade}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!Trade@{Trade}}
+\doxysubsubsection{\texorpdfstring{getSymbol()}{getSymbol()}}
+{\footnotesize\ttfamily \label{class_trade_ab315df073c263d0638cbc32d9bbb0c9b} 
+std\+::string Trade\+::get\+Symbol (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the trading symbol. 
+
+\begin{DoxyReturn}{Returns}
+The symbol of the asset being traded. 
+\end{DoxyReturn}
+\Hypertarget{class_trade_a38c2a69ac216cc7c8d90d3adc221d22c}\index{Trade@{Trade}!getTradeHistory@{getTradeHistory}}
+\index{getTradeHistory@{getTradeHistory}!Trade@{Trade}}
+\doxysubsubsection{\texorpdfstring{getTradeHistory()}{getTradeHistory()}}
+{\footnotesize\ttfamily \label{class_trade_a38c2a69ac216cc7c8d90d3adc221d22c} 
+std\+::vector$<$ \mbox{\hyperlink{classbasic__json}{json}} $>$ Trade\+::get\+Trade\+History (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the trade history. 
+
+\begin{DoxyReturn}{Returns}
+A vector of JSON objects representing the trade history. 
+\end{DoxyReturn}
+\Hypertarget{class_trade_a43eea85df78f49cea758112afbcf317a}\index{Trade@{Trade}!setQuantity@{setQuantity}}
+\index{setQuantity@{setQuantity}!Trade@{Trade}}
+\doxysubsubsection{\texorpdfstring{setQuantity()}{setQuantity()}}
+{\footnotesize\ttfamily \label{class_trade_a43eea85df78f49cea758112afbcf317a} 
+void Trade\+::set\+Quantity (\begin{DoxyParamCaption}\item[{double}]{quantity}{}\end{DoxyParamCaption})}
+
+
+
+Sets the quantity for the trade. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quantity} & The quantity of the asset to trade. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_trade_a4c4cbef105b419f6370769f32845e8d3}\index{Trade@{Trade}!setSymbol@{setSymbol}}
+\index{setSymbol@{setSymbol}!Trade@{Trade}}
+\doxysubsubsection{\texorpdfstring{setSymbol()}{setSymbol()}}
+{\footnotesize\ttfamily \label{class_trade_a4c4cbef105b419f6370769f32845e8d3} 
+void Trade\+::set\+Symbol (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{symbol}{}\end{DoxyParamCaption})}
+
+
+
+Sets the trading symbol for the trade. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em symbol} & The symbol of the asset to trade (e.\+g., BTC/\+USD). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_trade_aefe0e6909070d76a7b4fe56ea9e0b03f}\index{Trade@{Trade}!viewTrades@{viewTrades}}
+\index{viewTrades@{viewTrades}!Trade@{Trade}}
+\doxysubsubsection{\texorpdfstring{viewTrades()}{viewTrades()}}
+{\footnotesize\ttfamily \label{class_trade_aefe0e6909070d76a7b4fe56ea9e0b03f} 
+void Trade\+::view\+Trades (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays the trade history. 
+
+This method reads the trade history from a JSON file and prints it.
+
+This method reads the trade history from a JSON file and prints it. If the file does not exist or contains invalid JSON, an error message is displayed. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/trade.\+h\item 
+src/trade.\+cpp\end{DoxyCompactItemize}

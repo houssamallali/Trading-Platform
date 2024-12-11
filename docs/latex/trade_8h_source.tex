@@ -1,0 +1,37 @@
+\doxysection{trade.\+h}
+\hypertarget{trade_8h_source}{}\label{trade_8h_source}\index{src/trade.h@{src/trade.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ trade.h}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ TRADE\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ TRADE\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ </Users/allalihoussam/Downloads/Trading-\/Platform/src/json.hpp>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_trade}{Trade}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trade_a4c4cbef105b419f6370769f32845e8d3}{setSymbol}}(\textcolor{keyword}{const}\ std::string\&\ symbol);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trade_a43eea85df78f49cea758112afbcf317a}{setQuantity}}(\textcolor{keywordtype}{double}\ quantity);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trade_ac322e99c29043e3b6b58bd3bb9774f8a}{executeBuy}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trade_aefe0e6909070d76a7b4fe56ea9e0b03f}{viewTrades}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00050\ \ \ \ \ std::string\ \mbox{\hyperlink{class_trade_ab315df073c263d0638cbc32d9bbb0c9b}{getSymbol}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_trade_a48fa2ae0439bae99bca72229e2bf23e5}{getQuantity}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00064\ \ \ \ \ std::vector<nlohmann::json>\ \mbox{\hyperlink{class_trade_a38c2a69ac216cc7c8d90d3adc221d22c}{getTradeHistory}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00067\ \ \ \ \ std::string\ symbol;\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{double}\ quantity;\ \ \ \ }
+\DoxyCodeLine{00069\ \ \ \ \ std::vector<nlohmann::json>\ tradeHistory;\ }
+\DoxyCodeLine{00070\ \};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TRADE\_H}}
+
+\end{DoxyCode}
