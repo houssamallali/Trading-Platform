@@ -22,6 +22,11 @@
             "action": "buy",
             "quantity": 0.1,
             "symbol": "BTC/USD"
+        },
+        {
+            "action": "buy",
+            "quantity": 0.1,
+            "symbol": "BTC/USD"
         }
     ]
 }
